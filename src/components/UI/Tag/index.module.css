@@ -1,0 +1,7 @@
+.Tag {
+  border: 3px solid var(--color-text);
+  padding: 1rem 1.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  display: inline-block;
+}

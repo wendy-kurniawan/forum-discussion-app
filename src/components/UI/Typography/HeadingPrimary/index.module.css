@@ -1,0 +1,22 @@
+.HeadingPrimary,
+.HeadingPrimaryBorder,
+.HeadingPrimaryBorderAll {
+  font-size: 4.2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.HeadingPrimaryBorder::after {
+  content: '';
+  width: 5rem;
+  height: 5px;
+  display: block;
+  background-color: currentColor;
+  margin: 1rem auto 0;
+}
+
+.HeadingPrimaryBorderAll {
+  display: block;
+  padding: 2rem 5rem;
+  border: 5px solid currentColor;
+}

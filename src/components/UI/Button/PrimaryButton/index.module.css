@@ -1,0 +1,41 @@
+.PrimaryButton,
+.PrimaryButtonDanger,
+.PrimaryButtonWarning {
+  padding: 0.75rem 3rem;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.25s ease-in;
+}
+
+.PrimaryButton {
+  background-color: #6f95fc;
+  border: 1px solid #6f95fc;
+}
+
+.PrimaryButtonDanger {
+  background-color: #dd4f4f;
+  border: 1px solid #dd4f4f;
+}
+
+.PrimaryButtonWarning {
+  background-color: #a3a436;
+  border: 1px solid #a3a436;
+}
+
+.PrimaryButton:hover,
+.PrimaryButton:active {
+  background: #76a0fa;
+  border-color: #76a0fa;
+}
+
+.PrimaryButtonDanger:hover,
+.PrimaryButtonDanger:active {
+  background: #f85e5e;
+  border-color: #f85e5e;
+}
+
+.PrimaryButtonWarning:hover,
+.PrimaryButtonWarning:active {
+  background: #ccce37;
+  border-color: #ccce37;
+}

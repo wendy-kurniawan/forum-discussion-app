@@ -1,0 +1,43 @@
+.ThreadItem {
+  position: relative;
+  padding: 3rem 4rem;
+  border: 1px solid var(--color-primary-soft);
+  transition: background-color 0.25s ease-in;
+}
+
+.ThreadItem:hover {
+  background-color: var(--color-primary-soft);
+}
+
+.Article > header > .Heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.Heading > h2 {
+  margin-right: auto;
+}
+
+.Profile {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.Detail > .Name {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.Detail > .Date {
+  color: var(--color-grey);
+}
+
+.Content {
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  word-break: break-all;
+  overflow: hidden;
+}

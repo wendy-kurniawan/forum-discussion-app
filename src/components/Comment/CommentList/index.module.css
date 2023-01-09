@@ -1,0 +1,14 @@
+.CommentList {
+    width: 80%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.CommentList > ul {
+    list-style: none;
+}
+
+.CommentHeading {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+}

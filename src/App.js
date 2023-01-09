@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react'
 
-function App() {
+import Header from './layouts/Header'
+import Navigation from './layouts/Navigation'
+import { useDispatch, useSelector } from 'react-redux'
+import { setPreload } from './states/preload/action'
+import { unsetAuthedUser } from './states/authedUser/action'
+import Loading from './components/UI/Loading'
+import MainRoute from './router/MainRoute'
+
+const App = () => {
+  const { authedUser = null, isPreload = false } = useSelector(
+    (states) => states
+  )
+
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(setPreload())
+  }, [dispatch])
+
+  const handleLogout = () => {
+    dispatch(unsetAuthedUser())
+  }
+
+  if (isPreload) return null
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Loading />
+      <Header>
+        <h1>Discussy</h1>
+        {authedUser && (
+          <Navigation authedUser={authedUser} onLogOut={handleLogout} />
+        )}
+      </Header>
+      <main>
+        <MainRoute />
+      </main>
+    </>
+  )
 }
 
-export default App;
+export default App

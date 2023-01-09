@@ -1,0 +1,40 @@
+.ThreadDetail {
+  width: 80%;
+  max-width: 120rem;
+  margin: 0 auto 2rem;
+}
+
+.ThreadDetail .Header {
+  margin-bottom: 2rem;
+}
+
+.ThreadDetail .Heading {
+  font-size: 4.2rem;
+  margin-bottom: 1.25rem;
+}
+
+.ThreadDetail .Body {
+  font-size: 2rem;
+  word-break: break-all;
+  margin-bottom: 2.5rem;
+}
+
+.Profile {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.Detail > .Name {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.Detail > .Date {
+  color: var(--color-grey);
+}
+
+.ThreadDetail .Actions {
+  display: flex;
+  gap: 1.25rem;
+}

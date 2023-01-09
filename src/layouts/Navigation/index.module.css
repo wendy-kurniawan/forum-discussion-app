@@ -1,0 +1,27 @@
+.Navigation > ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.Navigation .Link {
+    font-size: 3.5rem;
+    color: var(--color-text);
+    text-decoration: none;
+    transition: all 0.25s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.Navigation .Link > span {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.Navigation .Link:hover {
+    transform: scale(1.2);
+}

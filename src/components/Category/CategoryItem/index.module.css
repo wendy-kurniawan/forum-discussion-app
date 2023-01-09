@@ -1,0 +1,15 @@
+.CategoryItem {
+  background-color: var(--color-primary-soft);
+  border: none;
+  padding: 2rem 4rem;
+  border-radius: 999px;
+  transition: all 0.25 ease-in;
+  cursor: pointer;
+}
+
+.CategoryItem:hover,
+.CategoryItem:active,
+.CategoryItem.Active {
+  background-color: var(--color-text);
+  color: #fff;
+}

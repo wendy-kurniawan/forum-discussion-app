@@ -1,0 +1,9 @@
+.IconButton {
+    border: none;
+    background-color: transparent;
+}
+
+.IconButton > * {
+    font-size: 2.6rem;
+    color: var(--color-text);
+}

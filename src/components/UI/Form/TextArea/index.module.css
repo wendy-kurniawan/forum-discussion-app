@@ -1,0 +1,13 @@
+.FormTextArea {
+    font-family: inherit;
+    padding: 1.25rem;
+    border: 1px solid var(--color-grey);
+    background-color: var(--color-primary-soft);
+    height: 20rem;
+    overflow: scroll;
+}
+
+.FormTextArea[data-placeholder]:empty::before {
+    content: attr(data-placeholder);
+    color: var(--color-grey);
+}

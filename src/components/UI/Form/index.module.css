@@ -1,0 +1,8 @@
+.Form {
+    width: 90%;
+    max-width: 80rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+}

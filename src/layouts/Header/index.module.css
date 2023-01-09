@@ -1,0 +1,17 @@
+.Header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 75em) {
+    .Header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem 8rem;
+        gap: 0;
+    }
+}

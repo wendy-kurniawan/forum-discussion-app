@@ -1,0 +1,11 @@
+.FormInput {
+    font-family: inherit;
+    padding: 1.25rem;
+    background-color: var(--color-primary-soft);
+    border: 1px solid var(--color-grey);
+    color: var(--color-text);
+}
+
+.FormInput::placeholder {
+    color: var(--color-grey);
+}

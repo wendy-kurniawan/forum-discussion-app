@@ -1,0 +1,25 @@
+.CommentItem {
+  padding: 3rem 4rem;
+  border: 1px solid var(--color-primary-soft);
+}
+
+.Profile {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.Detail > .Name {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.Detail > .Date {
+  color: var(--color-grey);
+  margin-bottom: 1.25rem;
+}
+
+.CommentItem .Actions {
+  display: flex;
+  gap: 1.25rem;
+}
